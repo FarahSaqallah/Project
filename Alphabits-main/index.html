@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="./js/all.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <title>Alphabits | Welcome</title>
+</head>
+<body id="home">
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+          <img src="./images/logo.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active px-4" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="#">Definitions</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Hardware</a></li>
+              <li><a class="dropdown-item" href="#">Software</a></li>
+              <li><a class="dropdown-item" href="#">AI</a></li>
+              <li><a class="dropdown-item" href="#">Programming Languages</a></li>
+              <li><a class="dropdown-item" href="#">Design</a></li>
+              <li><a class="dropdown-item" href="#">Image</a></li>
+              <li><a class="dropdown-item" href="#">Browser</a></li>
+              <li><a class="dropdown-item" href="#">Cloud & IoT</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+            </ul>
+          </li>
+        </ul>
+        <a href="#login" class="btn btn-dark rounded-pill ms-2 px-4">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search Nav -->
+  <div class="search-nav bg-dark px-2 px-md-0  sticky-top">
+    <div class="container">
+      <form class="d-flex py-2">
+            <input class="form-control mw-100 me-2 ms-auto rounded-pill" type="search" placeholder="Type a term.." aria-label="Search">
+            <button class="btn btn-light btn-outline-primary rounded-pill" type="submit">Search</button>
+          </form>
+    </div>
+  </div>
+
+      
+     <!-- Login section -->
+     <div class="d-flex justify-content-between ">
+      
+       <div class="log mt-5  ms-5 ">
+     <form action="./php/login.php" method="post">
+       <div class="mt-5">
+       
+      <h2  style="font-weight: bold ; width: 320px; ">Log in to <span style="color:rgba(0, 0, 255, 0.584)">AlphaBits</span> </h2>
+      <div>
+      <label style="font-weight: bold" class="mt-2">Username or Email</label>
+    </div>
+    <div class=" mt-2">
+      <input class="email" type="text" placeholder="Enter Username" name="username">
+    </div>
+    </div>
+      <br>
+      <div class="d-flex justify-content-between ">
+      <div class=" mt-2 ">
+      <label style="font-weight: bold" >Password </label>
+      </div>
+      <div class=" mt-2">
+        <a class="link text-black-50 d-none d-sm-block" href="">Forgot your password?</a>
+      </div>
+    </div>
+    <div>
+      <input  class="email mt-2" type="password" placeholder="Enter Password" name="password">
+</div>
+<div class=" mt-2">
+  <a class="link text-black-50 d-block d-sm-none" href="">Forgot your password?</a>
+</div>
+      <br>
+      <div >
+      <button class="email btn btn-dark ms-2 px-4"type="submit">Log in</button>
+    </div>
+     </form>
+
+     <div class="text-center">
+      <div class=" mt-4">
+       <span style="font-weight: bold;">
+        Not a member ?!
+       </span>
+       <a class="link text-black-50" style="font-size: medium; font-weight: bold; font-style: italic;" href="">Sign up now</a>
+       </div>
+     </div>
+       </div>
+    
+
+     <div class=" mt-3  d-none d-md-block me-5  " style="width:40%">
+      <img  src="./images/name.png" alt="logo">
+    </div>
+
+  </div>
+   
+</body>
+</html>
+
