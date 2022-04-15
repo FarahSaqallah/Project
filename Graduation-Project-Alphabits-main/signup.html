@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <title>Alphabits | Letters</title>
+</head>
+<body id="login">
+
+    <section class="hero" style="  height: 150vh;">
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active px-4" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-4" href="#">Definitions</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle px-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categories
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Hardware</a></li>
+                    <li><a class="dropdown-item" href="#">Software</a></li>
+                    <li><a class="dropdown-item" href="#">AI</a></li>
+                    <li><a class="dropdown-item" href="#">Programming Languages</a></li>
+                    <li><a class="dropdown-item" href="#">Design</a></li>
+                    <li><a class="dropdown-item" href="#">Image</a></li>
+                    <li><a class="dropdown-item" href="#">Browser</a></li>
+                    <li><a class="dropdown-item" href="#">Cloud & IoT</a></li>
+                    <!-- <li><hr class="dropdown-divider"></li> -->
+                  </ul>
+                </li>
+              </ul>
+              <a href="#login" class="btn btn-dark rounded-pill ms-2 px-4">Login</a>
+            </div>
+          </div>
+        </nav>
+      
+      <!-- Search Nav -->
+        <div class="search-nav bg-dark px-2 px-md-0  sticky-top">
+          <div class="container">
+            <form class="d-flex py-2">
+                  <input class="form-control mw-100 me-2 ms-auto rounded-pill" type="search" placeholder="Type a term.." aria-label="Search">
+                  <button class="btn btn-light btn-outline-primary rounded-pill" type="submit">Search</button>
+                </form>
+          </div>
+        </div>
+
+      <!-- sign up section -->
+        <div class="login-section container-narrow d-flex justify-content-between align-items-center" style="  height: 120vh;">
+            <!-- sign up form -->
+            <form action="">
+                <h1 class="mb-4 ">Sign up <span class="text-primary">Alphabit</span></h1>
+                <div class="form-group d-none d-lg-block">
+                    <label for="first" class="mb-2 me-5 pe-5">First name:</label>
+                   
+                    <label for="last" class="mb-2 me-5 ps-5">Last name:</label>
+                   
+                </div>
+              
+                <div class="form-group d-lg-none">
+                    <label for="first" class="mb-2 me-5 ">First name:</label>
+                   
+                    <label for="last" class="mb-2 me-5 ps-5">Last name:</label>
+                   
+                </div>
+                   <div class="form-group d-flex justify-content-between align-items-center">
+                <input type="text" name="first" id="first" placeholder="First name" class="rounded-pill p-2 w-100 mb-2 me-3">
+                <input type="text" name="last" id="last" placeholder="Last name" class="rounded-pill p-2 w-100 mb-2">
+            </div>
+                <div class="form-group">
+                    <label for="username" class="mb-2">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Username" class="rounded-pill p-2 w-100 mb-2">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="mb-2">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Username or Email" class="rounded-pill p-2 w-100 mb-2">
+                </div>
+                <div class="form-group">
+                    <!-- <div class="d-flex justify-content-between"> -->
+                        <label for="password"  class="mb-2">Password</label> 
+                    <!-- </div> -->
+                    <input type="password" name="password" id="password" placeholder="" class="rounded-pill p-2 w-100">
+                    <p class="text  ms-3">Please create a strong password with at least 8 characters</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            I accept the terms of service                        </label>
+                      </div>
+
+                </div>
+
+                <button type="submit" value="login" class="rounded-pill p-2 w-100 mb-2 btn-primary">Sign Up <i class="fa-solid fa-arrow-right-long"></i></button>
+                <footer>
+                    <p class="text-center">Have an accout? <a href="./login.html">Log in Now!</a></p>
+                </footer>
+            </form>
+            <!-- image -->
+            <div>
+                <img src="./images/logo.png" class="d-none d-lg-block" alt="logo">
+            </div>
+            
+        </div>
+        
+        <!-- footer -->
+        <footer>
+            <div class="w-100 bg-dark text-light text-center py-3">
+              <p class="text-center"><span class="text-primary">Alphabits </span>&copy; 2022, All Rights Reserved</p>
+            </div>
+        </footer>
+
+        </section>
+
+
+
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
