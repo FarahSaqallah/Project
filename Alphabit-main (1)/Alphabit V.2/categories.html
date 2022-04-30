@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Alphabit</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+              <img src="./images/logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3"  href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="definitions.html">Definitions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 active p-lg-3" aria-current="page" href="categories.html">Categories</a>
+              </li>
+            </ul>
+            <a class="btn rounded gray-btn me-2" href="./new-word.html">Add Term</a> 
+            <a class="btn rounded-pill main-btn" href="login.html">Login</a>
+          </div>
+        </div>
+      </nav>
+    
+    <!-- Search Nav -->
+    <div class="search-nav bg-dark px-2 px-md-0  sticky-top">
+        <div class="container">
+          <form class="d-flex py-2">
+                <input class="form-control mw-100 me-1 ms-auto rounded-pill" type="search" placeholder="Type a term.." aria-label="Search">
+                <button class="btn secondary-btn rounded-pill" type="submit">Search</button>
+              </form>
+        </div>
+      </div>
+
+      
+  <!-- Breadcrumb -->
+  <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb  ms-5 mt-3">
+      <li class="breadcrumb-item  "><a class="s bread-link" href="./index.html">Home</a></li>
+      <li class="breadcrumb-item active s" aria-current="page">Categories</li>
+    </ol>
+  </nav>
+
+    <!-- Category 1 -->
+    <div class="container">
+      <div class="category-section mt-5 p-3">
+        <h2 class="mb-3 text-center">Theoretical Computer Science</h2>
+        <div class="sub-category d-flex responsive">
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Lambda Calculus</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Computability Theory</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Computational Complexity</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Information Theory</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Cryptography</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Coding Theory</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Logic Theory</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Graph Theory</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Computational Geometry</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Automata Theory</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Quantum Programming</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Parallel Programming</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Formal Methods</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Data Structures</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          </div>
+        </div>
+    </div>
+
+    <!-- Category 2 -->
+    <div class="container">
+      <div class="category-section mt-5 p-3">
+        <h2 class="mb-3 text-center">Computer Engineering</h2>
+        <div class="sub-category d-flex responsive">
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Computer Architecture</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>System Programming</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Compilers</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Computer Networks</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Performance</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Computer Analysis</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Computer Graphics</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Data Centers</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Databases</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Hardware</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          </div>
+        </div>
+    </div>
+
+    <!-- Category 3 -->
+    <div class="container">
+      <div class="category-section mt-5 p-3">
+        <h2 class="mb-3 text-center">Software Engineering</h2>
+        <div class="sub-category d-flex responsive">
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Formal Methods</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Object Oriented Programming</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Version Control</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>SDLC</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          </div>
+        </div>
+    </div>
+
+    <!-- Category 4 -->
+    <div class="container">
+      <div class="category-section mt-5 p-3">
+        <h2 class="mb-3 text-center">Software and Programming Languages</h2>
+        <div class="sub-category d-flex responsive">
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Web Apps</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Browsers</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Operating System</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Smartphones</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>BIOS</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          </div>
+        </div>
+    </div>
+
+    <!-- Category 5 -->
+    <div class="container">
+      <div class="category-section mt-5 p-3">
+        <h2 class="mb-3 text-center">Applications</h2>
+        <div class="sub-category d-flex responsive">
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Optimization</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Boolean Satisfiability</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Artificial Intelligence</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Machine Learning</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Knowledge Representation</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Big Data</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Internet of Things - IoT</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Hacking</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Super Computing</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Simulation</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Human Computer Interaction</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Virtual Reality & Augmented Reality</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Telepresence</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          <!-- Start of Card -->
+          <div class="card my-card me-3 d-flex">
+            <div class="card-body">
+              <h2>Robotics</h2>
+              <p class="text-black-50 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <p>50 Terms</p>
+              <p><i class="fa-solid fa-angles-right"></i> Explore</p>
+            </div>
+          </div> 
+          <!-- End of Card -->
+          </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="p-3 mt-5">
+        <div class="container text-center d-flex flex-column align-items-center justify-content-center">
+          <ul class="d-flex justify-content-center align-items-center text-around">
+            <li><a href="">Login</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Definitions</a></li>
+            <li><a href="">Categories</a></li>
+          </ul>
+          <p class="mb-0"><span class="main-text">Alphabit</span> &copy; 2022 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>    
+    <script type="text/javascript" src="./js/popper.min.js"></script>    
+    <script type="text/javascript" src="./js/bootstrap.bundle.js"></script>    
+    <script src="./js/all.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>    
+    <script type="text/javascript" src="./js/my.js"></script> 
+</body>
+</html>

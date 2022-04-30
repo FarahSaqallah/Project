@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Word</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+              <img src="./images/logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active p-2 p-lg-3" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="definitions.html">Definitions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="categories.html">Categories</a>
+              </li>
+            </ul>
+            <a class="btn rounded gray-btn me-2" href="./new-word.html">Add Term</a> 
+            <a class="btn rounded-pill main-btn" href="login.html">Login</a>
+          </div>
+        </div>
+      </nav>
+    
+    <!-- Search Nav -->
+    <div class="search-nav bg-dark px-2 px-md-0  sticky-top">
+        <div class="container">
+          <form class="d-flex py-2">
+                <input class="form-control mw-100 me-1 ms-auto rounded-pill" type="search" placeholder="Type a term.." aria-label="Search">
+                <button class="btn secondary-btn rounded-pill" type="submit">Search</button>
+              </form>
+        </div>
+      </div>
+
+      <!-- Breadcrumb -->
+      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb  ms-5 mt-3">
+          <li class="breadcrumb-item  "><a class="s bread-link" href="./index.html">Home</a></li>
+          <li class="breadcrumb-item active s" aria-current="page">Definition</li>
+        </ol>
+      </nav>
+
+      
+
+    <!-- Term Post -->
+    <div class="container"  style=" height: 60vh;" >
+        <div class="word-post d-flex-column justify-content-center align-items-centers" >
+            <!-- word header -->
+            <div class="word-header d-flex justify-content-between align-items-center">
+                <div>
+                    <h2 class="word">Artificial Intelligence (AI)</h2>
+                    <div class="word-info">
+                        <p class="added-by">added by <a href="#user" class="username">Username</a></p>
+                        <p class="date-added">on 6/10/2022</p>
+                    </div>
+                </div>
+                <div class="category-tag">
+                    <a href="#category">category</a>
+                </div>
+            </div>
+            <!-- word body -->
+            <div class="word-body my-3">
+                <p class="definition">Artificial intelligence is intelligence demonstrated by machines, as opposed to the natural intelligence displayed by animals including humans</p>
+            </div>
+            <!-- word footer -->
+            <div class="word-footer">
+                <!-- likes/dislikes counter -->
+                <div class="d-flex justify-content-end">
+                    <form action="" class="">
+                        <div>
+                            <!-- <img src="./images/like.svg" alt=""> -->
+                            <button type="submit" value="1" style="border-right: 2px solid #e5e5e5">
+                                <img src="./images/like.svg" alt="">
+                                120</button>
+                        </div>
+                        <div>
+                            <button type="submit" value="1">
+                                <img src="./images/dislike.svg" alt="">
+                                34</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="p-3 mt-5">
+        <div class="container text-center d-flex flex-column align-items-center justify-content-center">
+          <ul class="d-flex justify-content-center align-items-center text-around">
+            <li><a href="">Login</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Definitions</a></li>
+            <li><a href="">Categories</a></li>
+          </ul>
+          <p class="mb-0"><span class="main-text">Alphabit</span> &copy; 2022 All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/all.min.js"></script>
+</body>
+</html>

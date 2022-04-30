@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Alphabit</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+              <img src="./images/logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active p-2 p-lg-3" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="definitions.html">Definitions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="categories.html">Categories</a>
+              </li>
+            </ul>
+            <a class="btn rounded gray-btn me-2" href="./new-word.html">Add Term</a> 
+            <a class="btn rounded-pill main-btn" href="login.html">Log in</a>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Search Nav -->
+    <div class="search-nav bg-dark px-2 px-md-0  sticky-top">
+        <div class="container">
+          <form class="d-flex py-2">
+                <input class="form-control mw-100 me-1 ms-auto rounded-pill" type="search" placeholder="Type a term.." aria-label="Search">
+                <button class="btn secondary-btn rounded-pill" type="submit">Search</button>
+              </form>
+        </div>
+    </div>
+
+  <!-- Breadcrumb -->
+  <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb  ms-5 mt-3">
+      <li class="breadcrumb-item  "><a class="s bread-link" href="./index.html">Home</a></li>
+      <li class="breadcrumb-item active s" aria-current="page">Admin Dashboard</li>
+    </ol>
+  </nav>
+  
+
+  <!--Admin Dashboard page -->
+
+<!-- admin menu for small screens -->
+
+<!--the sentence -->
+  <div class="d-flex justify-content-end align-items-between  mb-3 me-3 ">
+  <a class="filterword d-block d-sm-none d-xs-none" data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasExample" style="font-size: medium;">
+    Admin Menu 
+    <i class="fa-solid fa-bars"></i>
+  </a>
+  </div>
+<!--buttom menu -->
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasBottomLabel">  Admin Menu </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+      <ul class="nav flex-column">
+        <li>
+          <a class="nav-link menu-link" href="./profile.html">
+                Admin Profile
+              </a>
+        </li>
+        <li >
+          <a class="nav-link menu-link" href="./requests.html">
+                New Terms Requests 
+              </a>
+        </li>
+        <li >
+          <a class="nav-link menu-link" href="./users.html">
+               Users <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li >
+          <a class="nav-link menu-link" href="./all-terms.html">
+                All Terms
+              </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- end menu -->
+
+
+
+  <!-- side menu for large screens -->
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-3 d-none d-md-block sidebar ms-2">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link " href="./profile.html">
+                    <i class="zmdi zmdi-text"></i>
+                    Admin Profile
+                  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./requests.html">
+                    <i class="zmdi zmdi-file-widgets"></i>
+                    New Terms Requests
+                  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./users.html">
+                    <i class="zmdi zmdi-shopping-cart"></i>
+                   Users  
+                  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./all-terms.html">
+                    <i class="zmdi zmdi-accounts"></i>
+                    All Terms <span class="sr-only">(current)</span>
+                  </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- end menu -->
+
+
+   <!-- All terms page -->
+      <div class="col-md-8  sidebar ms-2 overflow-scroll" style="height: 400px;">
+        <h4 class="mb-2">Published Terms</h4>
+
+      
+    
+      <main role="">
+        <div class="projects mb-4">
+          <div class="projects-inner">
+            <!-- header -->
+            <header class="projects-header">
+              <div class="title">Number of Terms</div>
+              <div class="count">| 6 Terms</div>
+              <i class="zmdi zmdi-download"></i>
+            </header>
+
+              <!-- table -->
+            <table class="projects-table">
+              <!-- table header -->
+              <thead>
+                <tr>
+                  <th>NO.</th>
+                  <th>Term</th>
+                  <th>User</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <!-- first row -->
+              <tr>
+                <td>
+                  <p  class="no">1</p>
+                </td>
+                <td>
+                  <p>Cloud Computing</p>
+                </td>
+                <td>
+                    <p>Farah Saqallah</p>
+                  </td>
+                <td>
+                  <form class="form" action="#" method="POST">
+                  <select class=" action-box">
+                    <option class="status-text status-blue" selected>Published</option>
+                    <option  class="status-text status-green" >Removed</option>
+                  </select>
+                  </form>
+                </td>
+              </tr>
+
+              <!-- second row -->
+              <tr>
+                <td>
+                  <p class="no">2</p>
+                </td>
+                <td>
+                    <p>Cloud Computing</p>
+                  </td>
+                  <td>
+                      <p>Farah Saqallah</p>
+                    </td>
+                  <td>
+                    <form class="form" action="#" method="POST">
+                    <select class=" action-box">
+                      <option class="status-text status-blue" selected>Published</option>
+                      <option  class="status-text status-green" >Removed</option>
+                    </select>
+                  </form>
+                </td>
+              </tr>
+
+              <!-- third row -->
+              <tr>
+                <td>
+                  <p class="no">3</p>
+                </td>
+                <td>
+                    <p>Cloud Computing</p>
+                  </td>
+                  <td>
+                      <p>Farah Saqallah</p>
+                    </td>
+                  <td>
+                    <form class="form" action="#" method="POST">
+                    <select class=" action-box">
+                      <option class="status-text status-blue" selected>Published</option>
+                      <option  class="status-text status-green" >Removed</option>
+                    </select>
+                  </form>
+                </td>
+              </tr>
+
+         <!-- fourth row -->
+              <tr>
+                <td>
+                  <p class="no">4</p>
+                </td>
+                <td>
+                    <p>Cloud Computing</p>
+                  </td>
+                  <td>
+                      <p>Farah Saqallah</p>
+                    </td>
+                  <td>
+                    <form class="form" action="#" method="POST">
+                    <select class=" action-box">
+                      <option class="status-text status-blue" selected>Published</option>
+                      <option  class="status-text status-green" >Removed</option>
+                    </select>
+                  </form>
+                </td>
+              </tr>
+
+              <!-- fifth row -->
+              <tr>
+                <td>
+                  <p class="no">5</p>
+                </td>
+                <td>
+                    <p>Cloud Computing</p>
+                  </td>
+                  <td>
+                      <p>Farah Saqallah</p>
+                    </td>
+                  <td>
+                    <form class="form" action="#" method="POST">
+                    <select class=" action-box">
+                      <option class="status-text status-blue" selected>Published</option>
+                      <option  class="status-text status-green" >Removed</option>
+                    </select>
+                  </form>
+                </td>
+              </tr>
+
+              <!-- sixth row -->
+              <tr>
+                <td>
+                  <p class="no">4</p>
+                </td>
+                <td>
+                    <p>Cloud Computing</p>
+                  </td>
+                  <td>
+                      <p>Farah Saqallah</p>
+                    </td>
+                  <td>
+                    <form class="form" action="#" method="POST">
+                    <select class=" action-box">
+                      <option class="status-text status-blue" selected>Published</option>
+                      <option  class="status-text status-green" >Removed</option>
+                    </select>
+                  </form>
+                </td>
+              </tr>
+            </table>
+            <!-- end of the table -->
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="p-3 mt-5">
+        <div class="container text-center d-flex flex-column align-items-center justify-content-center">
+          <div class="d-none d-md-block">
+          <ul class="d-flex justify-content-center align-items-center text-around">
+            <li><a href="">Login</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Definitions</a></li>
+            <li><a href="">Categories</a></li>
+          </ul>
+        </div>
+          <p class="mb-0"><span class="main-text">Alphabit</span> &copy; 2022 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/all.min.js"></script>
+</body>
+</html>
